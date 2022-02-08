@@ -1,0 +1,52 @@
+<!-- https://opentdb.com/api.php?amount=10&category=21&difficulty=easy -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz App</title>
+	<link rel="stylesheet" type="text/css" href="css/quizApp.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&family=Rowdies:wght@700&family=Rubik+Beastly&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- partie setting -->
+ <div class="QuizSetting" style="display: block;margin-top: 80px">
+ 	<h1>Quiz Setting</h1>
+ 	<label>Select Category</label>
+ 	<select class="category">
+ 		<option id="21">Sports</option>
+ 		<option id="27">Animals</option>
+ 		<option id="23">History</option>
+ 	</select><br>
+ 	<label>Difficulty :</label>
+ 	<label>Easy</label>
+ 	<input type="radio" name="1" id="easy"></input>
+ 	<label>Medium</label>
+ 	<input type="radio" name="1" id="medium"></input>
+ 	<label>Hard</label> 
+ 	<input type="radio" name="1" id="hard"></input><br>
+ 	<label>Number of Question</label>
+ 	<input type="number" name="" id="number"> <br>  
+ 	<input type="submit" name="" value="Start Quiz" id="StartQuiz">
+</div>
+<!-- partie quiz  -->
+<div class="QuizMain"  style="display: none">
+	<h1>QUIZ</h1>
+	<span>question </span><span class="counter"></span>
+	<h3 class="Question"></h3>
+	<div class="QuestionItem" >	    
+	</div>
+	
+	<input type="submit" name="" value="Next" class="nextBtn" >
+
+</div>
+<!-- partie final -->
+<div class="result" style="display: none">
+	<h1>final result</h1>
+	<div><span class="answerCorrect"></span><span class="answerCorrect">/</span><span class="nQuestion"></span></div><br>
+	<input type="submit"  value="Try again" class="Tryagin">
+</div>
+ 
+ 
+<script type="module" src="js/setting.js"></script>
+</body>
+</html>
+
