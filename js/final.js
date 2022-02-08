@@ -11,7 +11,7 @@ class result{
 	resultFinal(){
 		this.CA.innerHTML=this.answer;
 		this.NQ.innerHTML=this.nQuestion;
-		this.tryaginBtn.addEventListener("click",()=>location.assign(""))
+		this.tryaginBtn.addEventListener("click",()=>window.location.reload())
 	}
 
 }
